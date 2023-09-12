@@ -1,0 +1,56 @@
+{% extends 'control_panel/panel-master.html' %}
+<!-- header | title -->
+{% block page_title %}Stantoche | Admin Panel | Create Client {% endblock %}
+<!--/ header | title  -->
+<body class="ttr-opened-sidebar ttr-pinned-sidebar">
+
+	<!--Main container start -->
+		{% block main %}
+			{% block breadcrumb %}
+				<div class="db-breadcrumb">
+					<h4 class="breadcrumb-title">Create Client</h4>
+					<ul class="db-breadcrumb-list">
+						<li><a href="{{url_for('admin_dashboard.admin_panel')}}"><i class="fa fa-home"></i>Home</a></li>
+						<li>Create Client</li>
+					</ul>
+				</div>
+			{% endblock %}
+			<!-- Card -->
+			<div class="row">
+				<div class="col-lg-12">
+					{% for message in get_flashed_messages() %}
+					<h2>{{ message }}</h2>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 m-b30">
+					<div class="widget-box">
+						<div class="email-wrapper">
+							<form action="/admin/createClient" method="POST" enctype="multipart/form-data" class="mail-compose">
+									<div class="form-group col-12">
+                                        <label for="organization">Name of Organization:</label>
+										<input class="form-control" type="text" id="organization" placeholder="Enter Organization Name" name="organization" required>
+									</div>
+                                    <div class="form-group col-12">
+                                        <label for="location">Location of Organization:</label>
+										<input class="form-control" type="text" id="location" placeholder="Enter Location of Your Organization" name="location" required>
+									</div>
+                                    <div class="form-group col-12" style="min-width: 700px;"></div>
+									<div class="form-group col-12">
+										<!--<button type="submit" class="btn btn-lg">Send</button>-->
+										<input type="submit" class="btn btn-lg" value="Send">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div> 
+				</div>
+				
+			</div>
+			<!-- Card END -->
+		{% endblock %}
+		<!--/ Main container start -->
+
+	<div class="ttr-overlay"></div>
+

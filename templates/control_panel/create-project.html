@@ -1,0 +1,88 @@
+{% extends 'control_panel/panel-master.html' %}
+<!-- header | title -->
+{% block page_title %}Stantoche | Admin Panel | Create Project {% endblock %}
+<!--/ header | title  -->
+<body class="ttr-opened-sidebar ttr-pinned-sidebar">
+
+	<!--Main container start -->
+		{% block main %}
+			{% block breadcrumb %}
+				<div class="db-breadcrumb">
+					<h4 class="breadcrumb-title">Create Project</h4>
+					<ul class="db-breadcrumb-list">
+						<li><a href="{{url_for('admin_dashboard.admin_panel')}}"><i class="fa fa-home"></i>Home</a></li>
+						<li>Create Project</li>
+					</ul>
+				</div>
+			{% endblock %}
+			<!-- Card -->
+			<div class="row">
+				<div class="col-lg-12">
+					{% for message in get_flashed_messages() %}
+					<h2>{{ message }}</h2>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 m-b30">
+					<div class="widget-box">
+						<div class="email-wrapper">
+							<div class="mail-list-container">
+								<form action="/admin/createProject" method="POST" enctype="multipart/form-data" class="mail-compose">
+									<div class="form-group col-12">
+                                        <label for="title">Project Name:</label>
+										<input class="form-control" type="text" placeholder="Project Name" id="title" name="title" required>
+									</div>
+                                    <div class="form-group col-12">
+										<label>Describe Project:</label>
+										{{ ckeditor.create(name='project_desc') }}
+									</div>
+                                    <div class="form-group col-12">
+                                        <label for="img_file">Upload Leader Image:</label>
+										<input class="form-control" type="file" name="img_file" id="img_file" required>
+									</div>
+									<div class="form-group col-12">
+                                        <label>Select client <sub>(Client must exist already in the database)</sub>:</label>
+                                        <select name="client_id" id="client_id" class="form-control" required>
+                                            {% for row in clients_record %}
+                                            <option value="{{ row[0] }}">{{ row[1] }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="start_date">Project Start Date</label>
+                                        <input type="date" name="start_date" id="start_date"  class="form-control">
+                                    </div>
+                                    <div class="form-group col-12">
+                                        <label for="end_date">Project End Date</label>
+                                        <input type="date" name="end_date" id="end_date"  class="form-control">
+                                    </div>
+									<div class="form-group col-12">
+                                        <label for="project_url">Enter Project URL</label>
+										<input class="form-control" type="text" name="project_url" id="project_url" placeholder="Enter Project URL (Github might be an option)" required>
+									</div>
+									<div class="form-group col-12">
+                                        <label>Select Project Category:</label>
+                                        <select name="project_category" id="project_category" class="form-control" required>
+                                            <option value="design">Frontend</option>
+											<option value="branding">Backend</option>
+											<option value="illustration">Full-stack</option>
+                                        </select>
+                                    </div>
+									<div class="form-group col-12">
+										<!--<button type="submit" class="btn btn-lg">Send</button>-->
+										<input type="submit" class="btn btn-lg" value="Send">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div> 
+				</div>
+				
+			</div>
+			<!-- Card END -->
+		{% endblock %}
+		<!--/ Main container start -->
+
+	<div class="ttr-overlay"></div>
+

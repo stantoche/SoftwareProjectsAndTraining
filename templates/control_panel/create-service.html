@@ -1,0 +1,63 @@
+{% extends 'control_panel/panel-master.html' %}
+<!-- header | title -->
+{% block page_title %}Stantoche | Admin Panel | Create Service {% endblock %}
+<!--/ header | title  -->
+<body class="ttr-opened-sidebar ttr-pinned-sidebar">
+
+	<!--Main container start -->
+		{% block main %}
+			{% block breadcrumb %}
+				<div class="db-breadcrumb">
+					<h4 class="breadcrumb-title">Create Service</h4>
+					<ul class="db-breadcrumb-list">
+						<li><a href="{{url_for('admin_dashboard.admin_panel')}}"><i class="fa fa-home"></i>Home</a></li>
+						<li>Create Service</li>
+					</ul>
+				</div>
+			{% endblock %}
+			<!-- Card -->
+			<div class="row">
+				<div class="col-lg-12">
+					{% for message in get_flashed_messages() %}
+					<h2>{{ message }}</h2>
+					{% endfor %}
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12 m-b30">
+					<div class="widget-box">
+						<div class="email-wrapper">
+							<form action="/admin/createService" method="POST" enctype="multipart/form-data" class="mail-compose">
+                                    <div class="form-group col-12">
+                                        <label for="img_file">Upload Leader Image</label>
+                                        <input class="form-control" id="img_file" type="file" name="img_file" required>
+                                    </div>
+									<div class="form-group col-12">
+                                        <label for="title">Service Name <sub>[Software Development | Coding Training | UI/UX Design]</sub></label>
+										<input class="form-control" type="text" id="title" placeholder="Enter Service Name" name="title" required>
+									</div>
+									<div class="form-group col-12">
+                                        <label for="icon">Service Icon <sub>[Software: ti-html5 mr-3 | Coding Training: ti-pencil-alt mr-3 | UI/UX: ti-desktop mr-3]</sub></label>
+										<input class="form-control" type="text" name="icon" id="icon" placeholder="Enter Service Icon" required>
+									</div>
+									<div class="form-group col-12">
+										<label>Describe Service:</label>
+										{{ ckeditor.create(name='service_desc') }}
+									</div>
+									<div class="form-group col-12">
+										<!--<button type="submit" class="btn btn-lg">Send</button>-->
+										<input type="submit" class="btn btn-lg" value="Send">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div> 
+				</div>
+				
+			</div>
+			<!-- Card END -->
+		{% endblock %}
+		<!--/ Main container start -->
+
+	<div class="ttr-overlay"></div>
+

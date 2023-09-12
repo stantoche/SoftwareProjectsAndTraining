@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="remus,business,company,agency,multipurpose,modern,bootstrap4">
+  
+  <meta name="author" content="Dreambuzz">
+
+  <title>STANTOCHE - Software Development and Training Provider</title>
+
+  <!-- Mobile Specific Meta-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='pages/images/favicon.html')}}" />
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/bootstrap/css/bootstrap.min.css')}}">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/animate-css/animates.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/fontawesome/css/all.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/themify/css/themify-icons.css')}}">
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/magnific-popup/dist/magnific-popup.css')}}">
+   <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/animated-text/animated-text.css')}}">
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/slick-carousel/slick/slick.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/slick-carousel/slick/slick-theme.css')}}">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/css/style.css')}}">
+
+</head>
+
+<body>
+
+
+
+<nav class="navbar navbar-expand-lg navigation header-padding site-header" id="navbar">
+	<div class="container-fluid">
+	  <a class="navbar-brand" href="{{url_for('home_bp.home')}}">
+	  	<h2>Stantoche.Com</h2>
+	  	<!--<img src="{{url_for('static', filename='images/logo.png')}}" alt="Rubi" class="img-fluid">-->
+	  </a>
+
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="fa fa-bars"></span>
+	  </button>
+  
+	  <div class="collapse navbar-collapse" id="navbarmain">
+		<ul class="navbar-nav m-auto">
+		  <!--<li class="nav-item">
+			<a class="nav-link smoth-scroll active" href="#slider">Home <span class="sr-only">(current)</span></a>
+		  </li>-->
+		   <li class="nav-item"><a class="nav-link smoth-scroll" href="#about">About</a></li>
+		   <li class="nav-item"><a class="nav-link smoth-scroll" href="#services">Services</a></li>
+		   <li class="nav-item"><a class="nav-link smoth-scroll" href="#portfolio">Portfolio</a></li>
+		   <!-- Opens the Tutorial section
+		   <li class="nav-item"><a class="nav-link smoth-scroll" href="#tutorials">Tutorials</a></li>
+		 		-->
+		   <li class="nav-item"><a class="nav-link smoth-scroll" href="#team">Team</a></li>
+		   <li class="nav-item"><a class="nav-link smoth-scroll" href="#blog">Blog</a></li>
+		</ul>
+
+		<form class="form-inline my-2 my-md-0 ml-lg-4">
+		  <a href="#contact" class="btn btn-main btn-rounded smoth-scroll">Contact Us<i class="fa fa-angle-right ml-2"></i></a>
+		</form>
+	  </div>
+	</div>
+</nav>
+
+<!-- Header Close --> 
+
+
+
+<!-- Slider Start -->
+<section class="slider" id="slider">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-8 col-md-8 col-12">
+				<div class="banner-content text-center">
+					 <h1 class="cd-headline clip is-full-width mb-4 ">
+					 	We provide <br>
+	                    <span class="cd-words-wrapper text-color">
+	                        <b class="is-visible">Software solutions. </b>
+	                        <b>Online Trainings.</b>
+	                    </span>
+	                </h1>
+					<p class="font-weight-normal lead mt-3 mb-4">
+							Stantoche.Com is your one-stop-shop for Software Development and Tech Skills Training. Our ideal is to help you realize your tech ambition - either by way of designing your software projects or by helping you clear your tech job interviews through our exclusive real time Masterclass and coaching sessions.
+					</p>
+					<ul class="list-inline socials-icon mb-4">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-behance"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+					
+					<a href="#about" class="btn btn-main btn-rounded smoth-scroll">Learn More <i class="fa fa-angle-right ml-2"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="intro section" id="about">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 pr-lg-5">
+				<div class="intro-img">
+					<img src="{{url_for('static', filename='pages/images/01.jpg')}}" alt="" class="img-fluid">
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="intro-content mt-5 mt-lg-0">
+					<h2 class="text-lg mb-4">Delivering Services That Meet Your Need</h2>
+
+					<p class="mb-4">
+						We are passionate about helping you realize your technology goals through time-bound project management and intensive mentorship sessions. We take pride in providing excellent services to all our clients by reflecting the following commitments:
+					</p>
+					
+					<ul class="list-unstyled ">
+						<li><h5><i class="ti-check mr-3"></i>Quality Assurance</h5></li>
+						<li><h5><i class="ti-check mr-3"></i>Interactive Design </h5></li>
+						<li><h5><i class="ti-check mr-3"></i>User-friendly Application</h5></li>
+						<li><h5><i class="ti-check mr-3"></i>Hands-on Learning</h5></li>
+						<li><h5><i class="ti-check mr-3"></i>Proactive Communication</h5></li>
+						<li><h5><i class="ti-check mr-3"></i>Comprehensive Feedback</h5></li>
+					</ul>
+
+					<a href="#services" class="btn btn-main mt-4 btn-rounded smoth-scroll">Services<i class="fa fa-angle-right ml-2"></i></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Coming soon
+<section class="section-bottom experience">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="title">
+					<h2>Specialized Area</h2>
+				</div>
+			</div>	
+		</div>
+		<div class="row">
+			<div class="col-lg-6 col-md-6">
+				<div class="skill-bar mb-2 mb-lg-0">
+					<div class="mb-4 text-right"><h4 class="font-weight-normal">Html/Css </h4></div>
+					<div class="progress">
+						<div class="progress-bar" data-percent="80">
+							<span class="percent-text"><span class="count">80</span>%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="skill-bar mb-2 mb-lg-0">
+					<div class="mb-4 text-right"><h4 class="font-weight-normal">WordPress/PHP</h4></div>
+					<div class="progress">
+						<div class="progress-bar" data-percent="95">
+							<span class="percent-text"><span class="count">95</span>%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6">
+				<div class="skill-bar mb-2 mb-lg-0">
+					<div class="mb-4 text-right"><h4 class="font-weight-normal">Graphics Design </h4></div>
+					<div class="progress">
+						<div class="progress-bar" data-percent="70">
+							<span class="percent-text"><span class="count">70</span>%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-6 col-md-6">
+				<div class="skill-bar mb-2 mb-lg-0">
+					<div class="mb-4 text-right"><h4 class="font-weight-normal">Marketing</h4></div>
+					<div class="progress">
+						<div class="progress-bar" data-percent="85">
+							<span class="percent-text"><span class="count">85</span>%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="skill-bar mb-4 mb-lg-0">
+					<div class=" mb-4 text-right"><h4 class="font-weight-normal">Branding</h4></div>
+					<div class="progress">
+						<div class="progress-bar" data-percent="60">
+							<span class="percent-text"><span class="count">60</span>%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-6 col-md-6">
+				<div class="skill-bar mb-4 mb-lg-0">
+					<div class=" mb-4 text-right"><h4 class="font-weight-normal">Woo-Commerce</h4></div>
+					<div class="progress">
+						<div class="progress-bar" data-percent="82">
+							<span class="percent-text"><span class="count">82</span>%</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+-->
+
+<!--
+<h1>I am about to put something here!</h1>
+<div>
+	{% for row in records %}
+		<p>{{ row[1] }}</p>
+	{% endfor %}
+</div>
+-->
+
+<section class="section secondary-bg" id="services">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<div class="section-title text-center">
+					<h2 class="mb-4 text-lg">Our services</h2>
+					<p>
+						As a team, we believe in specificity, thus our two-fold services (coding mentorship and software solutions) are decomposed into manageable modules. 
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row no-gutters">
+			<!--
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item">
+					<div class="d-flex align-items-center mb-4">
+						<i class="ti-microphone mr-3"></i>
+						<h4>Branding</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed.</p>
+
+					<a href="service-single.html" class="read-more">Learn More <i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+			-->
+
+			<!-- get data from database -refer to dump.html for the html structure -->
+			{% for row in services_records %}
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item">
+					<div class="d-flex align-items-center mb-4">
+						<i class="{{row[2]}}"></i>
+						<h4>{{row[3]}}</h4>
+					</div>
+					{{ (row[4] | safe)[:150] }}
+					<!--<p>
+						Are you looking for reliable software development services to help you bring your businesses to the next level? Look no further!
+					</p>-->
+
+					<!-- complete pitch - to be displayed on a separate page -->
+					<!--<p>
+						Are you looking for reliable software development services to help you bring your businesses to the next level? Look no further! We offer a wide range of software development services to meet your needs.
+					</p>
+
+					<p>
+						Our team of experienced developers can create custom software solutions tailored to your specific business needs. Whether you need a mobile app, web applications, or desktop software, we have the expertise to build it from scratch. We use the latest technology and programming languages to ensure that your software is not only functional but also scalable and future-proof.
+					</p>
+
+					<p>
+						We pride ourselves on our attention to detail and commitment to delivering high-quality software solutions. We follow industry-standard development practices to ensure that your software is bug-free and meets your expectations.
+					</p>
+
+					<p>
+						In addition to software development, we also offer software testing, maintenance, and support services. We understand that software development is an ongoing process and we're here to support you every step of the way.
+					</p>
+
+					<h1>How we work</h1>-->
+
+					<a href="{{url_for('service_bp.service', id=row[0])}}" class="read-more">Learn More <i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+			{% endfor %}
+			<!--/ get data from database -refer to dump.html for the html structure -->
+
+			<!--<div class="col-lg-4 col-md-6">
+				<div class="service-item">
+					<div class="d-flex align-items-center mb-4">
+						<i class="ti-layers mr-3"></i>
+						<h4>Graphics Design</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed.</p>
+
+					<a href="service-single.html" class="read-more">Learn More <i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6">
+				<div class="service-item">
+					<div class="d-flex align-items-center mb-4">
+						<i class="ti-wordpress mr-3"></i>
+						<h4>Web App Marketplace</h4>
+					</div>
+					<p>Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed.</p>
+
+					<a href="service-single.html" class="read-more">Learn More <i class="fa fa-angle-right"></i></a>
+				</div>
+			</div>
+			-->
+		</div>
+	</div>
+</section>
+
+<!-- portfolio -->
+<section class="section portfolio" id="portfolio">
+  <div class="container">
+  	 <div class="row justify-content-center">
+		<div class="col-lg-6">
+			<div class="section-title text-center">
+				<h2 class="mb-4 text-lg">Work Portfolio</h2>
+				<p>
+					We are excited to showcase a wide range of software projects and solutions that we have worked on, thus highlighting the expertise and skills of our team.
+				</p>
+			</div>
+		</div>
+	</div>
+
+      <div class="col-12 text-center  mb-5">
+        <div class="btn-group btn-group-toggle " data-toggle="buttons">
+          <label class="btn active ">
+            <input type="radio" name="shuffle-filter" value="all" checked="checked" />All
+          </label>
+          <label class="btn ">
+            <input type="radio" name="shuffle-filter" value="design" />UI/UX Design
+          </label>
+          <label class="btn">
+            <input type="radio" name="shuffle-filter" value="branding" />BRANDING
+          </label>
+          <label class="btn">
+            <input type="radio" name="shuffle-filter" value="illustration" />ILLUSTRATION
+          </label>
+        </div>
+      </div>
+
+    <div class="row shuffle-wrapper portfolio-gallery">
+		{% for row in projects_record %}
+		<div class="col-lg-4 col-md-6 col-12 mb-4 shuffle-item" data-groups="[&quot;{{ row[8] }}&quot;]">
+			<div class="portfolio-item mb-4">
+				  <img src="{{url_for('static', filename='pages/images/project_leaders/' + row[3])}}" alt="" class="img-fluid">
+				  <div class="overlay-content">
+					  <h5>{{ row[1] }}</h5>
+					  <a href="{{url_for('static', filename='pages/images/project_leaders/' + row[3])}}" class="portfolio-image popup-gallery"><i class="ti-zoom-in"></i></a>	
+					  <a href="{{url_for('single_project_bp.single_project', id=row[0])}}"><i class="ti-link"></i></a>	
+				  </div>
+			  </div>
+		</div>
+		{% endfor %}
+    </div>
+
+    <div class="row justify-content-center">
+    	<div class="col-lg-8">
+    		<div class="text-center mt-5">
+    			<a href="#testimonial" class="btn btn-main btn-rounded smoth-scroll">Read Success Story</a>
+    		</div>
+    	</div>
+    </div>
+  </div>
+</section>
+<!-- /portfolio -->
+
+<!-- Coming soon
+<section class="section experience" id="tutorials">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="title">
+					<h2>Online Tutorials</h2>
+				</div>
+			</div>	
+		</div>
+
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="content mb-4">
+					<h4>UX Designer</h4>
+					<span class="text-color">Googl inc[2000-2004]</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+				</div>
+				<div class="content mb-4">
+					<h4>Developer</h4>
+					<span class="text-color">Googl inc[2000-2004]</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="content mb-4">
+					<h4>Marketer</h4>
+					<span class="text-color">Googl inc[2000-2004]</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+				</div>
+				<div class="content mb-4">
+					<h4>Marketer</h4>
+					<span class="text-color">Googl inc[2000-2004]</span>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+-->
+<section class="counter-wrap section-bottom">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-md-6">
+				<div class="counter-item mb-5 mb-lg-0">
+					<i class="ti-user"></i>
+					<span class="counter">785</span>
+					<h5>Happy Clients</h5>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="counter-item mb-5 mb-lg-0">
+					<i class="ti-thumb-up"></i>
+					<span class="counter">385</span>
+					<h5>project done</h5>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="counter-item mb-5 mb-lg-0">
+					<i class="ti-face-smile"></i>
+					<span class="counter">845</span>
+					<h5>Cup of tea</h5>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="counter-item">
+					<i class="ti-cup"></i>
+					<span class="counter">225</span>
+					<h5>awards won</h5>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section bg-light" id="team">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<div class="section-title text-center">
+					<h2 class="mb-4 text-lg">Our Team</h2>
+					<p>
+						Meet our software development team! Our team is comprised of talented developers and designers who are passionate about creating innovative software solutions.
+					</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-4 col-md-6">
+				<div class="team-block mb-5 mb-lg-0">
+					<img src="{{url_for('static', filename='pages/images/team/male1.jpg')}}" alt="" class="img-fluid">
+					<div class="team-content">
+						<span class="mt-4 d-block">Founder/Software Developer</span>
+						<h4 class="mb-4">Stanley</h4>
+					</div>
+
+					<div class="overlay-content">
+						<span class="mt-4 d-block">Founder/Software Developer</span>
+						<h4 class="mb-4">Stanley</h4>
+						<p>
+							Stanley is a Computer Scientist with over 8 years programming experience. He is proficient in JavaScript, React, Python, Flask, Django, PHP, Laravel, and more.
+						</p>
+
+						<ul class="list-inline">
+							<li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="ti-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-md-6">
+				<div class="team-block mb-5 mb-lg-0">
+					<img src="{{url_for('static', filename='pages/images/team/female1.jpg')}}" alt="" class="img-fluid">
+					<div class="team-content">
+						<span class="mt-4 d-block">Project Manager</span>
+						<h4 class="mb-4">Nkiru</h4>
+					</div>
+
+					<div class="overlay-content">
+						<span class="mt-4 d-block">Project Manager</span>
+						<h4 class="mb-4">Nkiru</h4>
+						<p>Nkiru is a computer scientist with 4+ years experience in Software Systems Project Management, having managed over 15 software projects across various industries.</p>
+
+						<ul class="list-inline">
+							<li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="ti-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-lg-4 col-md-6">
+				<div class="team-block">
+					<img src="{{url_for('static', filename='pages/images/team/male1.jpg')}}" alt="" class="img-fluid">
+					<div class="team-content">
+						<span class="mt-4 d-block">UI/UX Designer</span>
+						<h4 class="mb-4">Linus</h4>
+					</div>
+
+					<div class="overlay-content">
+						<span class="mt-4 d-block">UI/UX Designer</span>
+						<h4 class="mb-4">Linus</h4>
+						<p>Linus is a computer scientist with a strong passion for User Experience Design. He has many years of experience in mobile and responsive UI designs for a wide range of industries.</p>
+
+						<ul class="list-inline">
+							<li class="list-inline-item"><a href="#"><i class="ti-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="ti-twitter"></i></a></li>
+							<li class="list-inline-item"><a href="#"><i class="ti-linkedin"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="cta">
+	<div class="container">
+		<div class="cta-wrap box-shadow">
+			<div class="row align-items-center justify-content-between">
+				<div class="col-lg-8">
+					<div class="cta-content">
+						<span class="text-color">Your Solution Express</span>
+						<h2 class="text-lg">Have any Project in mind?</h2>
+					</div>
+				</div>
+				<div class="col-lg-3 ">
+					<div class="text-lg-right mt-5 mt-lg-0">
+						<a href="#contact" class="btn btn-main btn-rounded smoth-scroll">Contact Us<i class="fa fa-angle-right ml-2"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Blog section -->
+<section class="section" id="blog">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<div class="section-title text-center">
+					<h2 class="mb-4 text-lg">Our Blogs</h2>
+					<p>
+						Stay up-to-date with the latest technology news. Our blogs feature in-depth articles, tutorials and case studies on a wide range of technology topics. From software development and cybersecurity to AI and machine learning, our blog covers the latest trends and insights in the tech industry.
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- News row -->
+		<div class="row">
+
+			{% for row in records %}
+			<div class="col-lg-4 col-md-6 ">
+				<div class="blog-item mb-5 mb-lg-0">
+					<img src="{{url_for('static',filename='pages/images/blog/'+row[7])}}" alt="" class="img-fluid">
+					<div class="content mt-4">
+						<!--<span class="timecount"><i class="ti-comments mr-3"></i>2 Comments</span>-->
+						<h4 class="mb-3 mt-2"><a href="{{url_for('blog_bp.blog', id=row[0])}}">{{row[1]}}</a></h4>
+						<p>{{ (row[2] | safe)[:150] + "..." }}</p>
+
+						<a href="{{url_for('blog_bp.blog', id=row[0])}}" class="read-more">Read More <i class="ti-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			{% endfor %}
+			
+			<!--
+			<div class="col-lg-4 col-md-6 ">
+				<div class="blog-item mb-5 mb-lg-0">
+					<img src="{{url_for('static',filename='pages/images/blog1.jpg')}}" alt="" class="img-fluid">
+					<div class="content mt-4">
+						<span class="timecount"><i class="ti-comments mr-3"></i>2 Comments</span>
+						<h4 class="mb-3 mt-2"><a href="blog-single.html">How To Build Honest UIs And Help Users Make Better </a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corrupti, suscipit minima debitis.</p>
+
+						<a href="blog-single.html" class="read-more">Read More <i class="ti-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			-->
+
+			<!--
+			<div class="col-lg-4 col-md-6">
+				<div class="blog-item mb-5 mb-lg-0">
+					<img src="{{url_for('static',filename='pages/images/blog2.jpg')}}" alt="" class="img-fluid">
+					<div class="content mt-4">
+						<span class="timecount"><i class="ti-comments mr-3"></i>2 Comments</span>
+						<h4 class="mb-3"><a href="blog-single.html">Dating Apps: How To Improve Your Designs </a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corrupti, suscipit minima debitis.</p>
+
+						<a href="blog-single.html" class="read-more">Read More <i class="ti-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			-->
+
+			<!--
+			<div class="col-lg-4 col-md-6">
+				<div class="blog-item mb-5 mb-lg-0">
+					<img src="{{url_for('static',filename='pages/images/blog3.jpg')}}" alt="" class="img-fluid">
+					<div class="content mt-4">
+						<span class="timecount"><i class="ti-comments mr-3"></i>2 Comments</span>
+						<h4 class="mb-3"><a href="blog-single.html">Meet Inclusive Front-End Design Patterns A New</a></h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam corrupti, suscipit minima debitis.</p>
+
+						<a href="blog-single.html" class="read-more">Read More <i class="ti-angle-right"></i></a>
+					</div>
+				</div>
+			</div>
+			-->
+
+		</div>
+	</div>
+</section>
+
+<section class="section" id="testimonial">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-5">
+				<div class="title">
+					<h2 class="mb-5 text-lg">Clients testify</h2>
+					<p class="mb-5 ">
+						We are proud to share the stories of our satisfied clients and showcase the impact that our software solutions have had on their businesses.
+					</p>
+					<a href="#contact" class="btn btn-main btn-rounded smoth-scroll">Get start<i class="fa fa-angle-right ml-2"></i></a>
+				</div>
+			</div>
+
+		
+			<div class="col-lg-7">
+				<div class="main-slider ">
+					<div class="testimonial-item d-flex align-items-center">
+						<div class="testimonial-content ">
+							<i class="ti-quote-left "></i>
+							<h4 class="mb-3 text-color mt-2">UI/UX!</h4>
+							<p>Their UI/UX team transformed our vision into a stunning reality. The design is not just visually appealing but also intuitive, enhancing user engagement.</p>
+							<div class="info">
+								<h5 class="mb-1">Don Chris</h5>
+								<p class="text-sm">CTFS, The Gambia</p>
+							</div>
+						</div>
+						<div class="testimonial-image">
+							<img src="{{url_for('static', filename='pages/images/testimonials/male1.jpg')}}" alt="" class="img-fluid">
+						</div>
+					</div>
+
+					<div class="testimonial-item d-flex align-items-center">
+						<div class="testimonial-content ">
+							<i class="ti-quote-left "></i>
+							<h4 class="mb-3 text-color mt-2">Development!</h4>
+							<p>Impressed by their web development expertise. They brought our complex ideas to life with seamless functionality and meticulous attention to detail.</p>
+							<div class="info">
+								<h5 class="mb-1">Edward</h5>
+								<p class="text-sm">CTFS, The Gambia</p>
+							</div>
+						</div>
+						<div class="testimonial-image">
+							<img src="{{url_for('static', filename='pages/images/testimonials/male1.jpg')}}" alt="" class="img-fluid">
+						</div>
+					</div>
+
+					<div class="testimonial-item d-flex align-items-center">
+						<div class="testimonial-content ">
+							<i class="ti-quote-left "></i>
+							<h4 class="mb-3 text-color mt-2">Training!</h4>
+							<p>Exceptional coding training program! Their experienced instructors guided me from novice to confident coder, providing hands-on projects that accelerated my learning journey.</p>
+							<div class="info">
+								<h5 class="mb-1">Jane</h5>
+								<p class="text-sm">Coding Mentee</p>
+							</div>
+						</div>
+						<div class="testimonial-image">
+							<img src="{{url_for('static', filename='pages/images/testimonials/female1.jpg')}}" alt="" class="img-fluid">
+						</div>
+					</div>
+
+					<div class="testimonial-item d-flex align-items-center">
+						<div class="testimonial-content ">
+							<i class="ti-quote-left "></i>
+							<h4 class="mb-3 text-color mt-2">UI/UX!</h4>
+							<p>Incredible UI/UX work that took our app to the next level. The design reflects a deep understanding of user behavior and aesthetics.</p>
+							<div class="info">
+								<h5 class="mb-1">Ernest</h5>
+								<p class="text-sm">Infiniteloop</p>
+							</div>
+						</div>
+						<div class="testimonial-image">
+							<img src="{{url_for('static', filename='pages/images/testimonials/male1.jpg')}}" alt="" class="img-fluid">
+						</div>
+					</div>
+
+					<div class="testimonial-item d-flex align-items-center">
+						<div class="testimonial-content ">
+							<i class="ti-quote-left "></i>
+							<h4 class="mb-3 text-color mt-2">Web Development!</h4>
+							<p>Their web development prowess is evident in the sleek, responsive site they built. It loads fast and performs flawlessly.</p>
+							<div class="info">
+								<h5 class="mb-1">Anna</h5>
+								<p class="text-sm">Gifted Hands International</p>
+							</div>
+						</div>
+						<div class="testimonial-image">
+							<img src="{{url_for('static', filename='pages/images/testimonials/female1.jpg')}}" alt="" class="img-fluid">
+						</div>
+					</div>
+
+					<div class="testimonial-item d-flex align-items-center">
+						<div class="testimonial-content ">
+							<i class="ti-quote-left "></i>
+							<h4 class="mb-3 text-color mt-2">Training!</h4>
+							<p>Life-changing coding training! The curriculum was structured perfectly, catering to beginners like me. Now I confidently tackle coding challenges.</p>
+							<div class="info">
+								<h5 class="mb-1">Bridget Wendy</h5>
+								<p class="text-sm">Coding Intern</p>
+							</div>
+						</div>
+						<div class="testimonial-image">
+							<img src="{{url_for('static', filename='pages/images/testimonials/female1.jpg')}}" alt="" class="img-fluid">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="section" id="contact">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-lg-6">
+				<div class="section-title text-center">
+					<h2 class="mb-4 text-lg">Let's Get started</h2>
+					<p>
+						Ready to take your business to the next level with innovative custom software solutions? Contact us today!
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row justify-content-center">
+			<div class="col-lg-8">
+				<form class="contact-form" method="POST" action="/contact" id="contactForm">
+					 <div class="row">
+                        <div class="col-12">
+                            <div class="alert alert-success contact__msg" style="display: none" role="alert">
+                                Your message was sent successfully.
+                            </div>
+                        </div>
+                    </div>
+
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="form-group">
+								<label>Select A Service</label>
+								<select name="services" id="services" class="form-control">
+									<option value="#">#</option>
+									<option value="Progamming (Training)">Progamming (Training)</option>
+									<option value="Progamming (Mentorship)">Progamming (Mentorship)</option>
+									<option value="Software Project Management">Software Project Management</option>
+								</select>
+								<!--<select name="services" id="services" class="form-control">
+									<option value="Python (Training)">Python (Training)</option>
+									<option value="JavaScript (Training)">JavaScript (Training)</option>
+									<option value="Frontend (Training)">Frontend (Training)</option>
+									<option value="Backend (Training)">Backend (Training)</option>
+									<option value="Fullstack (Training)">Fullstack (Training)</option>
+									<option value="Frontend Problem-solving (Mentorship)">Frontend Problem-solving (Mentorship)</option>
+									<option value="Backend Problem-solving (Mentorship)">Backend Problem-solving (Mentorship)</option>
+									<option value="Fullstack Problem-solving (Mentorship)">Fullstack Problem-solving (Mentorship)</option>
+									<option value="Software Development (Project)">Software Development (Project)</option>
+									<option value="UI/UX Design (Project)">UI/UX Design (Project)</option>
+								</select>-->
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-12">
+						<div class="d-lg-flex justify-content-between mt-4">
+							<p>* Click to continue to a more detailed page about your selection.</p>
+							<!--<input id="submit" name="submit" type="submit" class="btn btn-main btn-rounded" value="Continue">-->
+							<button id="submit" name="submit" type="submit" class="btn btn-main btn-rounded">
+								Continue <i class='fa fa-angle-right ml-2'></i> 
+							</button>
+						</div>
+					</div>
+				</form>	
+			</div>
+		</div>
+		
+	</div>
+</section>
+
+<section class="footer ">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 mr-auto col-md-12">
+				<div class="footer-widget widget mb-5 mb-lg-0">
+					<h3 class="mb-3 text-white">Stantoche.com</h3>
+					<p>Software Development and Training Provider.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="footer-widget widget mb-5 mb-lg-0">
+					<h6 class="mb-4">Get In touch</h6>
+					<div class="footer-contact">
+						<!--<h5>info@email.com</h5>-->
+						<h5>+220-292-4741</h5>
+						<h5>Banjul ,The Gambia</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget widget">
+					<h6 class="mb-4">Follow Us</h6>
+					<ul class="list-inline footer-socials-icon mb-0">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-behance"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--<div class="footer-btm ">
+			<div class="row align-items-center">
+				<div class="col-lg-8">
+					<p class="mb-0"><a href="https://www.templateshub.net" target="_blank">Templates Hub</a></p>
+				</div>
+				<div class="col-lg-4">
+					<form action="#" class="footer-subscribe mt-5 mt-lg-0">
+						<input type="text" class="form-control" placeholder="Email Address">
+						<i class="ti-email"></i>
+					</form>
+				</div>
+			</div>
+		</div>-->
+		<div class="footer-btm ">
+			<div class="row align-items-center">
+				<!--<div class="col-lg-8">
+					<p class="mb-0"><a href="https://www.templateshub.net" target="_blank">Templates Hub</a></p>
+				</div>-->
+				<div class="col-lg-12 text-center">
+					&copy;2023 Stantoche.Com | All rights reserved
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-top text-right">
+			<a href="#slider" class="top-to-bototm smoth-scroll"><i class="ti-angle-up"></i></a>
+		</div>
+	</div>
+</section>
+
+   
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="{{url_for('static', filename='pages/plugins/jquery/jquery.min.js')}}"></script>
+    <!-- Bootstrap 4.3.1 -->
+    <script src="{{url_for('static', filename='pages/plugins/bootstrap/js/bootstrap.min.js')}}"></script>
+    <!-- Slick Slider -->
+    <script src="{{url_for('static', filename='pages/plugins/slick-carousel/slick/slick.min.js')}}"></script>
+    <!-- Progress Bar -->
+    <script src="{{url_for('static', filename='pages/plugins/counto/apear.js')}}"></script>
+    <script src="{{url_for('static', filename='pages/plugins/counto/counTo.js')}}"></script>
+    <script src="{{url_for('static', filename='pages/plugins/animated-text/animated-text.js')}}"></script>
+
+    <script src="{{url_for('static', filename='pages/plugins/counterup/waypoint.js')}}"></script>
+    <script src="{{url_for('static', filename='pages/plugins/counterup/jquery.counterup.min.js')}}"></script>
+    <!--  Magnific Popup-->
+    <script src="{{url_for('static', filename='pages/plugins/magnific-popup/dist/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{url_for('static', filename='pages/plugins/shuffle/shuffle.min.js')}}"></script>
+  
+    <script src="{{url_for('static', filename='pages/plugins/jquery/ajax-contact.js')}}"></script>
+    <script src="{{url_for('static', filename='pages/js/script.js')}}"></script>
+
+  </body>
+  
+
+</html>
+   

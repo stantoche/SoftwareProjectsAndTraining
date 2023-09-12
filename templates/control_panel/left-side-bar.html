@@ -1,0 +1,137 @@
+<div class="ttr-sidebar">
+    <div class="ttr-sidebar-wrapper content-scroll">
+        <!-- side menu logo start -->
+        <div class="ttr-sidebar-logo">
+            <a href="#">
+                <!--<img alt="" src="{{url_for('static', filename='admin/images/logo.png')}}" width="122" height="27">-->
+                <strong>Stantoche.Com</strong>
+            </a>
+            <!-- <div class="ttr-sidebar-pin-button" title="Pin/Unpin Menu">
+                <i class="material-icons ttr-fixed-icon">gps_fixed</i>
+                <i class="material-icons ttr-not-fixed-icon">gps_not_fixed</i>
+            </div> -->
+            <div class="ttr-sidebar-toggle-button">
+                <i class="ti-arrow-left"></i>
+            </div>
+        </div>
+        <!-- side menu logo end -->
+        <!-- sidebar menu start -->
+        <nav class="ttr-sidebar-navi">
+            <ul>
+                <li>
+                    <a href="{{url_for('admin_dashboard.admin_panel')}}" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="ti-home"></i></span>
+                        <span class="ttr-label">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="courses.html" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="ti-book"></i></span>
+                        <span class="ttr-label">Courses</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="ti-email"></i></span>
+                        <span class="ttr-label">Mailbox</span>
+                        <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="mailbox.html" class="ttr-material-button"><span class="ttr-label">Mail Box</span></a>
+                        </li>
+                        <li>
+                            <a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Compose</span></a>
+                        </li>
+                        <li>
+                            <a href="mailbox-read.html" class="ttr-material-button"><span class="ttr-label">Mail Read</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <!-- Create: Service | Post | Portfolio -->
+                <li>
+                    <a href="#" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="ti-email"></i></span>
+                        <span class="ttr-label">Create</span>
+                        <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="mailbox-compose.html" class="ttr-material-button"><span class="ttr-label">Portfolio</span></a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('admin_create_post.admin_post')}}" class="ttr-material-button"><span class="ttr-label">Post</span></a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('admin_create_service.admin_service')}}" class="ttr-material-button"><span class="ttr-label">Service</span></a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('admin_create_strategy.admin_strategy')}}" class="ttr-material-button"><span class="ttr-label">Strategy</span></a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('admin_create_client.admin_client')}}" class="ttr-material-button"><span class="ttr-label">Client</span></a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('admin_create_project.admin_project')}}" class="ttr-material-button"><span class="ttr-label">Project</span></a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('admin_create_project_tool.admin_project_tool')}}" class="ttr-material-button"><span class="ttr-label">Project Tool</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <!--/ Create: Service | Post | Portfolio -->
+                <li>
+                    <a href="#" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="ti-calendar"></i></span>
+                        <span class="ttr-label">Calendar</span>
+                        <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="basic-calendar.html" class="ttr-material-button"><span class="ttr-label">Basic Calendar</span></a>
+                        </li>
+                        <li>
+                            <a href="list-view-calendar.html" class="ttr-material-button"><span class="ttr-label">List View</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="bookmark.html" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="ti-bookmark-alt"></i></span>
+                        <span class="ttr-label">Bookmarks</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="review.html" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="ti-comments"></i></span>
+                        <span class="ttr-label">Review</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="add-listing.html" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="ti-layout-accordion-list"></i></span>
+                        <span class="ttr-label">Add listing</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="ttr-material-button">
+                        <span class="ttr-icon"><i class="ti-user"></i></span>
+                        <span class="ttr-label">My Profile</span>
+                        <span class="ttr-arrow-icon"><i class="fa fa-angle-down"></i></span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="user-profile.html" class="ttr-material-button"><span class="ttr-label">User Profile</span></a>
+                        </li>
+                        <li>
+                            <a href="teacher-profile.html" class="ttr-material-button"><span class="ttr-label">Teacher Profile</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="ttr-seperate"></li>
+            </ul>
+            <!-- sidebar menu end -->
+        </nav>
+        <!-- sidebar menu end -->
+    </div>
+</div>

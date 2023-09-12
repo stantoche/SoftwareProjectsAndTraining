@@ -1,0 +1,97 @@
+{% extends 'control_panel/panel-master.html' %}
+<!-- header | title -->
+{% block page_title %}Stantoche | Admin Panel | {% endblock %}
+<!--/ header | title  -->
+<body class="ttr-opened-sidebar ttr-pinned-sidebar">
+	
+	<!--Main container start -->
+    {% block main %}
+    {% block breadcrumb %}
+        <div class="db-breadcrumb">
+            <h4 class="breadcrumb-title">Dashboard</h4>
+            <ul class="db-breadcrumb-list">
+                <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+                <li>Project Requests</li>
+            </ul>
+        </div>
+    {% endblock %}
+			<div class="row">
+				<!-- Your Profile Views Chart -->
+				<div class="col-lg-12 m-b30">
+					<div class="widget-box">
+						<div class="wc-title">
+							<h4>Project Request Details</h4>
+						</div>
+						<div class="widget-inner">
+							<div class="card-courses-list admin-review">
+								<div class="card-courses-full-dec">
+									<!--<div class="card-courses-title">
+										<h4>[project type]</h4>
+									</div>
+									<div class="card-courses-list-bx">
+										<ul class="card-courses-view">
+											<li class="card-courses-user">
+                                                <div><label for="name">Name:</label> [fname] [lname]</div>
+											</li>
+										</ul>
+									</div>-->
+									<div class="row card-courses-dec">
+
+										<div class="col-md-12">
+											<h6 class="m-b10"><strong>Name:</strong></h6>
+											<p>{{ project_record[1] }} {{ project_record[2] }}</p>	
+										</div>
+
+                                        <div class="col-md-12">
+											<h6 class="m-b10"><strong>Email:</strong></h6>
+											<p>{{ project_record[4] }}</p>	
+										</div>
+
+                                        <div class="col-md-12">
+											<h6 class="m-b10"><strong>Phone:</strong></h6>
+											<p>{{ project_record[5] }}</p>	
+										</div>
+
+                                        <div class="col-md-12">
+											<h6 class="m-b10"><strong>Company/Organization:</strong></h6>
+											<p>{{ project_record[3] }}</p>	
+										</div>
+
+                                        <div class="col-md-12">
+											<h6 class="m-b10"><strong>Type of Project:</strong></h6>
+											<p>{{ project_record[6] }}</p>	
+										</div>
+                                        
+                                        <div class="col-md-12">
+											<h6 class="m-b10"><strong>Project Description:</strong></h6>
+											<p>{{ project_record[7] | safe }}</p>	
+										</div>
+
+                                        <div class="col-md-12">
+											<h6 class="m-b10"><strong>Project Budget:</strong></h6>
+											<p>{{ project_record[8] }}</p>	
+										</div>
+
+                                        <div class="col-md-12">
+											<h6 class="m-b10"><strong>Estimated Project Start Date:</strong></h6>
+											<p>{{ project_record[9] }}</p>	
+										</div>
+
+                                        <div class="col-md-12">
+											<h6 class="m-b10"><strong>Estimated Project End Date:</strong></h6>
+											<p>{{ project_record[10] }}</p>	
+										</div>
+									</div>
+								</div>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<!-- Your Profile Views Chart END-->
+			</div>
+		</div>
+	</main>
+    {% endblock %}
+    <!--/ Main container start -->
+	<div class="ttr-overlay"></div>

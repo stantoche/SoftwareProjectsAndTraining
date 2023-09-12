@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="description" content="remus,business,company,agency,multipurpose,modern,bootstrap4">
+  
+  <meta name="author" content="Dreambuzz">
+
+  <title>STANTOCHE - Software Development and Training Provider</title>
+
+  <!-- Mobile Specific Meta-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Favicon -->
+  <link rel="shortcut icon" type="image/x-icon" href="{{url_for('static', filename='pages/images/favicon.html')}}" />
+  <!-- bootstrap.min css -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/bootstrap/css/bootstrap.min.css')}}">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/animate-css/animates.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/fontawesome/css/all.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/themify/css/themify-icons.css')}}">
+  <!-- Magnify Popup -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/magnific-popup/dist/magnific-popup.css')}}">
+   <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/animated-text/animated-text.css')}}">
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/slick-carousel/slick/slick.css')}}">
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/plugins/slick-carousel/slick/slick-theme.css')}}">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="{{url_for('static', filename='pages/css/style.css')}}">
+
+</head>
+
+<body>
+
+
+
+	<nav class="navbar navbar-expand-lg navigation header-padding site-header" id="navbar">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="{{url_for('home_bp.home')}}">
+			  <h2>Stantoche.Com</h2>
+			  <!--<img src="{{url_for('static', filename='images/logo.png')}}" alt="Rubi" class="img-fluid">-->
+		  </a>
+	
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarmain" aria-controls="navbarmain" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="fa fa-bars"></span>
+		  </button>
+	  
+		  <div class="collapse navbar-collapse" id="navbarmain">
+			<ul class="navbar-nav m-auto">
+			  <!--<li class="nav-item">
+				<a class="nav-link smoth-scroll active" href="#slider">Home <span class="sr-only">(current)</span></a>
+			  </li>-->
+			   <li class="nav-item"><a class="nav-link smoth-scroll" href="{{url_for('home_bp.home')}}#about">About</a></li>
+			   <li class="nav-item"><a class="nav-link smoth-scroll" href="{{url_for('home_bp.home')}}#services">Services</a></li>
+			   <li class="nav-item"><a class="nav-link smoth-scroll" href="{{url_for('home_bp.home')}}#portfolio">Portfolio</a></li>
+			   <!-- Opens the Tutorial section
+			   <li class="nav-item"><a class="nav-link smoth-scroll" href="#tutorials">Tutorials</a></li>
+					 -->
+			   <li class="nav-item"><a class="nav-link smoth-scroll" href="{{url_for('home_bp.home')}}#team">Team</a></li>
+			   <li class="nav-item"><a class="nav-link smoth-scroll" href="{{url_for('home_bp.home')}}#blog">Blog</a></li>
+			</ul>
+	
+			<form class="form-inline my-2 my-md-0 ml-lg-4">
+			  <a href="{{url_for('home_bp.home')}}#contact" class="btn btn-main btn-rounded smoth-scroll">Contact Us<i class="fa fa-angle-right ml-2"></i></a>
+			</form>
+		  </div>
+		</div>
+	</nav>
+
+<!-- Header Close --> 
+
+
+
+<section class="page-title bg-2">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+          <h1>Blog</h1>
+          <p>{{record[1]}}</p>
+      </div>
+
+      <div class="col-lg-5">
+        <ul class="list-inline header-breadcumb text-lg-right mt-5 mt-lg-0">
+          <li class="list-inline-item"><a href="{{url_for('home_bp.home')}}">Home</a></li>
+          <li class="list-inline-item">/</li>
+          <li class="list-inline-item">Blog</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-wrapper section">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+								<div class="post post-single">
+					<div class="post-thumb mb-4">
+						<img class="img-fluid" src="{{url_for('static', filename='pages/images/blog/'+record[8])}}" alt="">
+					</div>
+
+					<ul class="list-inline post-tags">
+						<li class="list-inline-item ">
+							<a href="#">{{record[7]}}</a>
+						</li>
+					</ul>
+					<h2 class="post-title">{{record[1]}}</h2>
+
+					<ul class="list-inline single-post-meta">
+						<li class="list-inline-item">
+							<a href="#profile_summary">By {{record[5]}} {{record[6]}} </a>
+						</li>
+						<!--Published Date-->
+						<li class="list-inline-item">
+							<i class="ti-write"></i>{{record[3].strftime('%B %#d, %Y')}}
+						</li>
+						<li class="list-inline-item">
+							<i class="ti-timer"></i>{{record[4]}} mins read
+						</li>
+					</ul>
+
+					<div class="post-content post-excerpt text-justify">
+						<p>{{ record[2] | safe }}</p>
+					</div>
+
+					</div>
+
+					<!-- Auhtor Info Start -->
+					<div class="author-block">
+						<div class="media">
+							<img src="assets/images/author.png" alt="" class="img-fluid mr-4">
+
+							<div class="media-body">
+								<h5 id="profile_summary">{{record[5]}} {{record[6]}}</h5>
+								<p>
+									I am a skilled software developer and experienced trainer with passion for creating innovative solutions.
+									With over 8 years of hands-on experience in full-stack development, I excel in designing and implementing
+									robust applications using PHP, Python, JavaScript, Flask, Django, React, and more. As a dedicated trainer, 
+									I have successfully delivered workshops and training sessions on Fullstack, Frontend, Backend, Databases, 
+									Algorithms & Data Structures to diverse audiences, simplifying complex concepts and fostering a strong learning environment. 
+									My adaptable teaching style and deep technical expertise make me an effective communicator and mentor, 
+									helping individuals and teams grow their programming skills. I am committed to staying up-to-date with the 
+									latest industry trends and technologies, ensuring my training content remains relevant and valuable. 
+								</p>
+
+								<p>
+									Looking forward to collaborating on exciting projects and empowering others to thrive in the world of 
+									software development.
+								</p>
+								<ul class="list-inline mb-0">
+									<li class="list-inline-item">
+										<a href="https://facebook.com/edehstanley.tochukwu"><i class="ti-facebook"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="https://twitter.com/stanleytochukw6"><i class="ti-twitter"></i></a>
+									</li>
+									<li class="list-inline-item">
+										<a href="https://linkedin.com/in/stanleyedeh/"><i class="ti-linkedin"></i></a>
+									</li>
+									<!--<li class="list-inline-item">
+										<a href="#"><i class="ti-instagram"></i></a>
+									</li>-->
+									<li class="list-inline-item">
+										<a href="https://github.com/stantoche"><i class="ti-github"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<!-- Auhtor Info End -->
+
+					 <!--custom pagination-->
+                    <!--<div class="custom-pagination custom-pagination-post">
+                        <div class="older full- d-lg-flex align-items-center">
+                             <a href="#" class="next-post-pagination">
+                                <h6>Next post</h6>
+                                Haifaa Al Mansour Brings a New Tale Set in Saudi to Venice
+                             </a>
+                        </div>
+
+                        <div class="newer d-lg-flex align-items-center">
+                            <a href="#" class="prev-post-pagination">
+                                <h6>Previous post</h6>
+                                Alicia Keys is on the Picturesque Trip of a Lifetime in Egypt
+                            </a>
+                        </div>
+                    </div>-->
+		                <!--custom pagination-->
+
+			</div>
+			<!-- Categories -->
+			<!--<div class="col-lg-4">
+				<div class="sidebar">
+
+					<div class="widget mb-5 widget-list-item">
+						<h5 class="widget-title">Categories</h5>
+						<ul class="list-unstyled mb-0">
+						<li class="d-flex justify-content-between align-items-center">
+							<a href="#">Event</a>
+							<span class="">(14)</span>
+						</li>
+						<li class="d-flex justify-content-between align-items-center">
+							<a href="#">Lifestyle</a>
+							<span class="">(2)</span>
+						</li>
+						<li class="d-flex justify-content-between align-items-center">
+						<a href="#">Music</a>
+							<span class="">(1)</span>
+						</li>
+						</ul>
+					</div>
+				</div>
+			</div>-->
+			<!--/ Categories -->
+		</div>
+	</div>
+</section>
+
+
+<section class="footer ">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-4 mr-auto col-md-12">
+				<div class="footer-widget widget mb-5 mb-lg-0">
+					<h3 class="mb-3 text-white">Stantoche.com</h3>
+					<p>Software Development and Training Provider.</p>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-6">
+				<div class="footer-widget widget mb-5 mb-lg-0">
+					<h6 class="mb-4">Get In touch</h6>
+					<div class="footer-contact">
+						<!--<h5>info@email.com</h5>-->
+						<h5>+220-292-4741</h5>
+						<h5>Banjul ,The Gambia</h5>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6">
+				<div class="footer-widget widget">
+					<h6 class="mb-4">Follow Us</h6>
+					<ul class="list-inline footer-socials-icon mb-0">
+						<li class="list-inline-item"><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-dribbble"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-behance"></i></a></li>
+						<li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!--<div class="footer-btm ">
+			<div class="row align-items-center">
+				<div class="col-lg-8">
+					<p class="mb-0"><a href="https://www.templateshub.net" target="_blank">Templates Hub</a></p>
+				</div>
+				<div class="col-lg-4">
+					<form action="#" class="footer-subscribe mt-5 mt-lg-0">
+						<input type="text" class="form-control" placeholder="Email Address">
+						<i class="ti-email"></i>
+					</form>
+				</div>
+			</div>
+		</div>-->
+		<div class="footer-btm ">
+			<div class="row align-items-center">
+				<!--<div class="col-lg-8">
+					<p class="mb-0"><a href="https://www.templateshub.net" target="_blank">Templates Hub</a></p>
+				</div>-->
+				<div class="col-lg-12 text-center">
+					&copy;2023 Stantoche.Com | All rights reserved
+				</div>
+			</div>
+		</div>
+
+		<div class="footer-top text-right">
+			<a href="#slider" class="top-to-bototm smoth-scroll"><i class="ti-angle-up"></i></a>
+		</div>
+	</div>
+</section>
+
+   
+
+    <!-- 
+    Essential Scripts
+    =====================================-->
+
+    
+    <!-- Main jQuery -->
+    <script src="assets/plugins/jquery/jquery.min.js"></script>
+    <!-- Bootstrap 4.3.1 -->
+    <script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Slick Slider -->
+    <script src="assets/plugins/slick-carousel/slick/slick.min.js"></script>
+    <!-- Progress Bar -->
+    <script src="assets/plugins/counto/apear.js"></script>
+    <script src="assets/plugins/counto/counTo.js"></script>
+    <script src="assets/plugins/animated-text/animated-text.js"></script>
+
+    <script src="assets/plugins/counterup/waypoint.js"></script>
+    <script src="assets/plugins/counterup/jquery.counterup.min.js"></script>
+    <!--  Magnific Popup-->
+    <script src="assets/plugins/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="assets/plugins/shuffle/shuffle.min.js"></script>
+  
+    <script src="assets/plugins/jquery/ajax-contact.js"></script>
+    <script src="assets/js/script.js"></script>
+
+  </body>
+  
+</html>
